@@ -29,13 +29,12 @@
            HorizontalOptions="Center"
                    Style="{StaticResource labelSubTitleStyle}"/>
             <StackLayout Margin="0, 30, 0, 0">
-                <Entry x:Name="MoedaEntry" Placeholder="Digite um valor" Keyboard="Numeric" ReturnType="Default"/>
                 <Picker x:Name="CurrencyPicker" HorizontalOptions="FillAndExpand" Title="Selecione a moeda"/>
+                <Entry x:Name="MoedaEntry" Placeholder="Digite um valor" Keyboard="Numeric" ReturnType="Default"/>
                 <Button Text="Converter!" Clicked="Convert_Currency" />
                 <Label x:Name="ConvertidoLabel"
                         Style="{StaticResource labelSubTitleStyle}"/>
             </StackLayout>
-            <!--<Button Text="Mais opções de moeda" Clicked="Mais_Opcoes" />-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

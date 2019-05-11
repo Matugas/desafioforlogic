@@ -60,15 +60,6 @@ namespace desafio4logic
             all_currencies = all_currencies.OrderBy(c => c.id).ToList();
         }
 
-        void Mais_Opcoes(object sender, System.EventArgs e)
-        {
-            CurrencyPicker.Items.Clear();
-            foreach (Currency c in all_currencies)
-            {
-                CurrencyPicker.Items.Add(c.id);
-            }
-        }
-
         /**
          * Método que converte o valor digitado no Entry e da moeda selecionada no Picker
          * para as outras moedas pedidas no desafio e mostra em um Label.
